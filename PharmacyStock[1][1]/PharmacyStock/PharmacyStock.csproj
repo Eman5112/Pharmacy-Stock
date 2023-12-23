@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9CE748E-9516-4FC0-A53E-3202B37CEF7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PharmacyStock</RootNamespace>
+    <AssemblyName>PharmacyStock</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\employee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Emp_Sup.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\PurchasesBill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\purchesBillDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\SaleBillDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\SalesBill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Supplier.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet82.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet82.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyStockDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PharmacyStockDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\EditEmployee.Designer.cs">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\EditSupplier.Designer.cs">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Insert_New_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Insert_New_Employee.Designer.cs">
+      <DependentUpon>Insert_New_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Insert_New_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Insert_New_Product.Designer.cs">
+      <DependentUpon>Insert_New_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Insert_New_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Insert_New_Supplier.Designer.cs">
+      <DependentUpon>Insert_New_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ListSaleBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ListSaleBill.Designer.cs">
+      <DependentUpon>ListSaleBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\ProcBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ProcBill.Designer.cs">
+      <DependentUpon>ProcBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SaleBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\SaleBill.Designer.cs">
+      <DependentUpon>SaleBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ListProcBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ListProcBill.Designer.cs">
+      <DependentUpon>ListProcBill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Screens\EditEmployee.resx">
+      <DependentUpon>EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\EditSupplier.resx">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Insert_New_Employee.resx">
+      <DependentUpon>Insert_New_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Insert_New_Product.resx">
+      <DependentUpon>Insert_New_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Insert_New_Supplier.resx">
+      <DependentUpon>Insert_New_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ListSaleBill.resx">
+      <DependentUpon>ListSaleBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Screens\ProcBill.resx">
+      <DependentUpon>ProcBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\SaleBill.resx">
+      <DependentUpon>SaleBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ListProcBill.resx">
+      <DependentUpon>ListProcBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="DB\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DB\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PharmacyStockDataSet.xsc">
+      <DependentUpon>PharmacyStockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet.xss">
+      <DependentUpon>PharmacyStockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet1.xsc">
+      <DependentUpon>PharmacyStockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet1.xss">
+      <DependentUpon>PharmacyStockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet10.xsc">
+      <DependentUpon>PharmacyStockDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet10.xss">
+      <DependentUpon>PharmacyStockDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet11.xsc">
+      <DependentUpon>PharmacyStockDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet11.xss">
+      <DependentUpon>PharmacyStockDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet12.xsc">
+      <DependentUpon>PharmacyStockDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet12.xss">
+      <DependentUpon>PharmacyStockDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet13.xsc">
+      <DependentUpon>PharmacyStockDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet13.xss">
+      <DependentUpon>PharmacyStockDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet14.xsc">
+      <DependentUpon>PharmacyStockDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet14.xss">
+      <DependentUpon>PharmacyStockDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet15.xsc">
+      <DependentUpon>PharmacyStockDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet15.xss">
+      <DependentUpon>PharmacyStockDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet16.xsc">
+      <DependentUpon>PharmacyStockDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet16.xss">
+      <DependentUpon>PharmacyStockDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet17.xsc">
+      <DependentUpon>PharmacyStockDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet17.xss">
+      <DependentUpon>PharmacyStockDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet18.xsc">
+      <DependentUpon>PharmacyStockDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet18.xss">
+      <DependentUpon>PharmacyStockDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet19.xsc">
+      <DependentUpon>PharmacyStockDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet19.xss">
+      <DependentUpon>PharmacyStockDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet2.xsc">
+      <DependentUpon>PharmacyStockDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet2.xss">
+      <DependentUpon>PharmacyStockDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet20.xsc">
+      <DependentUpon>PharmacyStockDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet20.xss">
+      <DependentUpon>PharmacyStockDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet21.xsc">
+      <DependentUpon>PharmacyStockDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet21.xss">
+      <DependentUpon>PharmacyStockDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet22.xsc">
+      <DependentUpon>PharmacyStockDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet22.xss">
+      <DependentUpon>PharmacyStockDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet23.xsc">
+      <DependentUpon>PharmacyStockDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet23.xss">
+      <DependentUpon>PharmacyStockDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet24.xsc">
+      <DependentUpon>PharmacyStockDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet24.xss">
+      <DependentUpon>PharmacyStockDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet25.xsc">
+      <DependentUpon>PharmacyStockDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet25.xss">
+      <DependentUpon>PharmacyStockDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet26.xsc">
+      <DependentUpon>PharmacyStockDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet26.xss">
+      <DependentUpon>PharmacyStockDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet3.xsc">
+      <DependentUpon>PharmacyStockDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet3.xss">
+      <DependentUpon>PharmacyStockDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet4.xsc">
+      <DependentUpon>PharmacyStockDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet4.xss">
+      <DependentUpon>PharmacyStockDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet5.xsc">
+      <DependentUpon>PharmacyStockDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet5.xss">
+      <DependentUpon>PharmacyStockDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet6.xsc">
+      <DependentUpon>PharmacyStockDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet6.xss">
+      <DependentUpon>PharmacyStockDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet7.xsc">
+      <DependentUpon>PharmacyStockDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet7.xss">
+      <DependentUpon>PharmacyStockDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet82.xsc">
+      <DependentUpon>PharmacyStockDataSet82.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet82.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet82.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet82.xss">
+      <DependentUpon>PharmacyStockDataSet82.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet9.xsc">
+      <DependentUpon>PharmacyStockDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PharmacyStockDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PharmacyStockDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PharmacyStockDataSet9.xss">
+      <DependentUpon>PharmacyStockDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imag\stop_close_off_14465.png" />
+    <None Include="imag\3592854-add-user-business-man-employee-general-human-member-office_107767.png" />
+    <None Include="imag\green_consumerism_eco_icon_181853.png" />
+    <None Include="imag\product_searching_icon_181876.png" />
+    <None Include="imag\add_to_cart_icon_181858.png" />
+    <None Include="imag\1486564400-account_81513.png" />
+    <None Include="imag\1458264596_authorisation_lock_padlock_safe_password_privacy_secuom_55333.png" />
+    <None Include="imag\1458264596_authorisation_lock_padlock_safe_password_privacy_security_icon-icons.com_55333.png" />
+    <None Include="imag\images %289%29.jpeg" />
+    <None Include="imag\images %283%29.jpeg" />
+    <None Include="imag\images.jpeg" />
+    <None Include="imag\22006960-farmakologi-och-lakemedel-sjukvard-bakgrund-med-kopia-plats-generativ-ai-illustration-fotona.jpeg" />
+    <None Include="imag\images %281%29.jpeg" />
+    <None Include="imag\images %285%29.jpeg" />
+    <None Include="imag\1621385.jpg" />
+    <None Include="imag\WhatsApp Image 2023-12-06 at 13.33.21_dd84453d.jpg" />
+    <None Include="imag\WhatsApp Image 2023-12-06 at 13.33.27_f7de4e20.jpg" />
+    <None Include="imag\WhatsApp Image 2023-12-06 at 13.33.28_a33cddb6.jpg" />
+    <None Include="imag\WhatsApp Image 2023-12-06 at 13.33.21_1c5d27c9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imag\تنزيل %281%29.png" />
+    <None Include="imag\home-sign-icon-main-page-button-navigation-vector-2873729.jpg" />
+    <None Include="imag\تنزيل.png" />
+    <None Include="imag\herbs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DB\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="imag\iStocksolarseven-1300036753-768x42.jpg" />
+    <None Include="imag\iStocksolarseven-1300036753-768x432.jpg" />
+    <None Include="imag\photo_2023-12-23_09-41-02.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

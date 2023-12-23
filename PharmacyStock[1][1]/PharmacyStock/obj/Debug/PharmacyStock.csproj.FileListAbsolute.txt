@@ -1,0 +1,162 @@
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\PharmacyStock.exe.config
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\PharmacyStock.exe
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\PharmacyStock.pdb
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Properties.Resources.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.exe
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.pdb
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\EntityFramework.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\EntityFramework.xml
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Login.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.csproj.CopyComplete
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Employees.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Product.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Products.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Supplier.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Suppliers.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Employee.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.Home.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditProduct.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.exe.config
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.exe
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.pdb
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\bin\Debug\EntityFramework.xml
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\bin\Debug\EntityFramework.SqlServer.xml
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.AssemblyReference.cache
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditProduct.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Employees.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Home.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Employee.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Product.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Supplier.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Login.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Properties.Resources.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Products.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Suppliers.resources
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.GenerateResource.cache
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CoreCompileInputs.cache
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CopyComplete
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.exe
+C:\year3 sem1\SWE\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.pdb
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.exe.config
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.exe
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.pdb
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\bin\Debug\EntityFramework.xml
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.AssemblyReference.cache
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditProduct.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Employees.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Home.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Employee.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Product.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Supplier.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Login.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Properties.Resources.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Products.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Suppliers.resources
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.GenerateResource.cache
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CopyComplete
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.exe
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.pdb
+C:\Users\pc\OneDrive\Desktop\Software Project\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditEmployee.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.exe.config
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.exe
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\PharmacyStock.pdb
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditEmployee.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditProduct.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Home.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Employee.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Product.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Supplier.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Properties.Resources.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CopyComplete
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.exe
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.pdb
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditSupplier.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.SaleBill.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.ProcBill.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Transaction.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.ListSaleBill.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\obj\Debug\PharmacyStock.Login.resources
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Buffers.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Memory.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Buffers.xml
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Memory.xml
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\pc\source\repos\PharmacyStock\PharmacyStock[1]\PharmacyStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\PharmacyStock.exe.config
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\PharmacyStock.exe
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\PharmacyStock.pdb
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Buffers.dll
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Memory.dll
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Buffers.xml
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Memory.xml
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditEmployee.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditProduct.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditSupplier.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Home.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Employee.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Product.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Supplier.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.ListSaleBill.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Login.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.ProcBill.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.SaleBill.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.transaction.resources
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.exe
+C:\Users\DELL\OneDrive\Desktop\pharmacystock\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.pdb
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\PharmacyStock.exe.config
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\PharmacyStock.exe
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\PharmacyStock.pdb
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Buffers.dll
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Memory.dll
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Buffers.xml
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Memory.xml
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.AssemblyReference.cache
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditEmployee.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditProduct.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.EditSupplier.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Home.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Employee.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Product.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.Insert_New_Supplier.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.ListSaleBill.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Login.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Properties.Resources.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.ProcBill.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.SaleBill.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.Screens.transaction.resources
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.GenerateResource.cache
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.csproj.CopyComplete
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.exe
+C:\Users\pc\OneDrive\Desktop\اخر تعديل\PharmacyStock[1][1]\PharmacyStock\obj\Debug\PharmacyStock.pdb

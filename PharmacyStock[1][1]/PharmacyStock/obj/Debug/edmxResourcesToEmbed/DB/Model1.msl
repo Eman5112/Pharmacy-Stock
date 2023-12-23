@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PharmacyStockModelStoreContainer" CdmEntityContainer="PharmacyStockEntities2">
+    <EntitySetMapping Name="Emp_Sup">
+      <EntityTypeMapping TypeName="PharmacyStockModel.Emp_Sup">
+        <MappingFragment StoreEntitySet="Emp_Sup">
+          <ScalarProperty Name="SuplierID" ColumnName="SuplierID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="PharmacyStockModel.employee">
+        <MappingFragment StoreEntitySet="employees">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="PharmacyStockModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchasesBills">
+      <EntityTypeMapping TypeName="PharmacyStockModel.PurchasesBill">
+        <MappingFragment StoreEntitySet="PurchasesBill">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="ContactPersonPhone" ColumnName="ContactPersonPhone" />
+          <ScalarProperty Name="EmployeeNationalID" ColumnName="EmployeeNationalID" />
+          <ScalarProperty Name="TotalPriceBeforeDiscount" ColumnName="TotalPriceBeforeDiscount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="TotalPriceAfterDiscount" ColumnName="TotalPriceAfterDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchesBillDetails">
+      <EntityTypeMapping TypeName="PharmacyStockModel.purchesBillDetail">
+        <MappingFragment StoreEntitySet="purchesBillDetails">
+          <ScalarProperty Name="Productcode" ColumnName="Productcode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="PurchesBillID" ColumnName="PurchesBillID" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleBillDetails">
+      <EntityTypeMapping TypeName="PharmacyStockModel.SaleBillDetail">
+        <MappingFragment StoreEntitySet="SaleBillDetails">
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="SaleBillID" ColumnName="SaleBillID" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesBills">
+      <EntityTypeMapping TypeName="PharmacyStockModel.SalesBill">
+        <MappingFragment StoreEntitySet="SalesBill">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="TatalPriceBeforeDiscount" ColumnName="TatalPriceBeforeDiscount" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="TotalPriceAfterDiscount" ColumnName="TotalPriceAfterDiscount" />
+          <ScalarProperty Name="EmployeeNationalID" ColumnName="EmployeeNationalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="PharmacyStockModel.Supplier">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Addres" ColumnName="Addres" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7ee8604aa34f474a9f8b643f13122be3" Name="Diagram1">
+        <EntityTypeShape EntityType="PharmacyStockModel.Emp_Sup" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.employee" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.Product" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.PurchasesBill" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.purchesBillDetail" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.SaleBillDetail" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.SalesBill" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PharmacyStockModel.Supplier" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="PharmacyStockModel.FK__Emp_Sup__Employe__55BFB948" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__Emp_Sup__Suplier__56B3DD81" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__Emp_Sup__Transac__57A801BA" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__Purchases__Emplo__3EDC53F0" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__SalesBill__Emplo__467D75B8" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__purchesBi__Produ__5A846E65" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__SaleBillD__Produ__5E54FF49" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__Purchases__Suppl__3FD07829" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__purchesBi__Purch__5B78929E" ManuallyRouted="false" />
+        <AssociationConnector Association="PharmacyStockModel.FK__SaleBillD__SaleB__5F492382" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

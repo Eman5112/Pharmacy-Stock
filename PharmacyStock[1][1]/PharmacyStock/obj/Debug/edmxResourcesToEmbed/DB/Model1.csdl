@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PharmacyStockModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Emp_Sup">
+    <Key>
+      <PropertyRef Name="SuplierID" />
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="SuplierID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeID" Type="String" MaxLength="14" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TransactionID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="employee" Relationship="Self.FK__Emp_Sup__Employe__55BFB948" FromRole="Emp_Sup" ToRole="employees" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK__Emp_Sup__Suplier__56B3DD81" FromRole="Emp_Sup" ToRole="Suppliers" />
+    <NavigationProperty Name="PurchasesBill" Relationship="Self.FK__Emp_Sup__Transac__57A801BA" FromRole="Emp_Sup" ToRole="PurchasesBill" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="NationalID" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NationalID" Type="String" MaxLength="14" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="position" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Emp_Sup" Relationship="Self.FK__Emp_Sup__Employe__55BFB948" FromRole="employees" ToRole="Emp_Sup" />
+    <NavigationProperty Name="PurchasesBills" Relationship="Self.FK__Purchases__Emplo__3EDC53F0" FromRole="employees" ToRole="PurchasesBill" />
+    <NavigationProperty Name="SalesBills" Relationship="Self.FK__SalesBill__Emplo__467D75B8" FromRole="employees" ToRole="SalesBill" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="purchesBillDetails" Relationship="Self.FK__purchesBi__Produ__5A846E65" FromRole="Products" ToRole="purchesBillDetails" />
+    <NavigationProperty Name="SaleBillDetails" Relationship="Self.FK__SaleBillD__Produ__5E54FF49" FromRole="Products" ToRole="SaleBillDetails" />
+  </EntityType>
+  <EntityType Name="PurchasesBill">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierID" Type="Int32" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContactPersonPhone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="EmployeeNationalID" Type="String" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Name="TotalPriceBeforeDiscount" Type="Double" />
+    <Property Name="Discount" Type="Double" />
+    <Property Name="TotalPriceAfterDiscount" Type="Double" />
+    <NavigationProperty Name="Emp_Sup" Relationship="Self.FK__Emp_Sup__Transac__57A801BA" FromRole="PurchasesBill" ToRole="Emp_Sup" />
+    <NavigationProperty Name="employee" Relationship="Self.FK__Purchases__Emplo__3EDC53F0" FromRole="PurchasesBill" ToRole="employees" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK__Purchases__Suppl__3FD07829" FromRole="PurchasesBill" ToRole="Suppliers" />
+    <NavigationProperty Name="purchesBillDetails" Relationship="Self.FK__purchesBi__Purch__5B78929E" FromRole="PurchasesBill" ToRole="purchesBillDetails" />
+  </EntityType>
+  <EntityType Name="purchesBillDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Productcode" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PurchesBillID" Type="Int32" Nullable="false" />
+    <Property Name="ProductPrice" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__purchesBi__Produ__5A846E65" FromRole="purchesBillDetails" ToRole="Products" />
+    <NavigationProperty Name="PurchasesBill" Relationship="Self.FK__purchesBi__Purch__5B78929E" FromRole="purchesBillDetails" ToRole="PurchasesBill" />
+  </EntityType>
+  <EntityType Name="SaleBillDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ProductCode" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SaleBillID" Type="Int32" Nullable="false" />
+    <Property Name="ProductPrice" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__SaleBillD__Produ__5E54FF49" FromRole="SaleBillDetails" ToRole="Products" />
+    <NavigationProperty Name="SalesBill" Relationship="Self.FK__SaleBillD__SaleB__5F492382" FromRole="SaleBillDetails" ToRole="SalesBill" />
+  </EntityType>
+  <EntityType Name="SalesBill">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TatalPriceBeforeDiscount" Type="Double" Nullable="false" />
+    <Property Name="discount" Type="Double" Nullable="false" />
+    <Property Name="TotalPriceAfterDiscount" Type="Double" Nullable="false" />
+    <Property Name="EmployeeNationalID" Type="String" MaxLength="14" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="employee" Relationship="Self.FK__SalesBill__Emplo__467D75B8" FromRole="SalesBill" ToRole="employees" />
+    <NavigationProperty Name="SaleBillDetails" Relationship="Self.FK__SaleBillD__SaleB__5F492382" FromRole="SalesBill" ToRole="SaleBillDetails" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Addres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Emp_Sup" Relationship="Self.FK__Emp_Sup__Suplier__56B3DD81" FromRole="Suppliers" ToRole="Emp_Sup" />
+    <NavigationProperty Name="PurchasesBills" Relationship="Self.FK__Purchases__Suppl__3FD07829" FromRole="Suppliers" ToRole="PurchasesBill" />
+  </EntityType>
+  <Association Name="FK__Emp_Sup__Employe__55BFB948">
+    <End Role="employees" Type="Self.employee" Multiplicity="1" />
+    <End Role="Emp_Sup" Type="Self.Emp_Sup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="NationalID" />
+      </Principal>
+      <Dependent Role="Emp_Sup">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Emp_Sup__Suplier__56B3DD81">
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="Emp_Sup" Type="Self.Emp_Sup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Emp_Sup">
+        <PropertyRef Name="SuplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Emp_Sup__Transac__57A801BA">
+    <End Role="PurchasesBill" Type="Self.PurchasesBill" Multiplicity="1" />
+    <End Role="Emp_Sup" Type="Self.Emp_Sup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchasesBill">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Emp_Sup">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Purchases__Emplo__3EDC53F0">
+    <End Role="employees" Type="Self.employee" Multiplicity="0..1" />
+    <End Role="PurchasesBill" Type="Self.PurchasesBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="NationalID" />
+      </Principal>
+      <Dependent Role="PurchasesBill">
+        <PropertyRef Name="EmployeeNationalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SalesBill__Emplo__467D75B8">
+    <End Role="employees" Type="Self.employee" Multiplicity="0..1" />
+    <End Role="SalesBill" Type="Self.SalesBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="NationalID" />
+      </Principal>
+      <Dependent Role="SalesBill">
+        <PropertyRef Name="EmployeeNationalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__purchesBi__Produ__5A846E65">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="purchesBillDetails" Type="Self.purchesBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="code" />
+      </Principal>
+      <Dependent Role="purchesBillDetails">
+        <PropertyRef Name="Productcode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SaleBillD__Produ__5E54FF49">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="SaleBillDetails" Type="Self.SaleBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="code" />
+      </Principal>
+      <Dependent Role="SaleBillDetails">
+        <PropertyRef Name="ProductCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Purchases__Suppl__3FD07829">
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="PurchasesBill" Type="Self.PurchasesBill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PurchasesBill">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__purchesBi__Purch__5B78929E">
+    <End Role="PurchasesBill" Type="Self.PurchasesBill" Multiplicity="1" />
+    <End Role="purchesBillDetails" Type="Self.purchesBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchasesBill">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="purchesBillDetails">
+        <PropertyRef Name="PurchesBillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SaleBillD__SaleB__5F492382">
+    <End Role="SalesBill" Type="Self.SalesBill" Multiplicity="1" />
+    <End Role="SaleBillDetails" Type="Self.SaleBillDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesBill">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SaleBillDetails">
+        <PropertyRef Name="SaleBillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PharmacyStockEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Emp_Sup" EntityType="Self.Emp_Sup" />
+    <EntitySet Name="employees" EntityType="Self.employee" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="PurchasesBills" EntityType="Self.PurchasesBill" />
+    <EntitySet Name="purchesBillDetails" EntityType="Self.purchesBillDetail" />
+    <EntitySet Name="SaleBillDetails" EntityType="Self.SaleBillDetail" />
+    <EntitySet Name="SalesBills" EntityType="Self.SalesBill" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <AssociationSet Name="FK__Emp_Sup__Employe__55BFB948" Association="Self.FK__Emp_Sup__Employe__55BFB948">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="Emp_Sup" EntitySet="Emp_Sup" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Emp_Sup__Suplier__56B3DD81" Association="Self.FK__Emp_Sup__Suplier__56B3DD81">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Emp_Sup" EntitySet="Emp_Sup" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Emp_Sup__Transac__57A801BA" Association="Self.FK__Emp_Sup__Transac__57A801BA">
+      <End Role="PurchasesBill" EntitySet="PurchasesBills" />
+      <End Role="Emp_Sup" EntitySet="Emp_Sup" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Purchases__Emplo__3EDC53F0" Association="Self.FK__Purchases__Emplo__3EDC53F0">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="PurchasesBill" EntitySet="PurchasesBills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SalesBill__Emplo__467D75B8" Association="Self.FK__SalesBill__Emplo__467D75B8">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="SalesBill" EntitySet="SalesBills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__purchesBi__Produ__5A846E65" Association="Self.FK__purchesBi__Produ__5A846E65">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="purchesBillDetails" EntitySet="purchesBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SaleBillD__Produ__5E54FF49" Association="Self.FK__SaleBillD__Produ__5E54FF49">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="SaleBillDetails" EntitySet="SaleBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Purchases__Suppl__3FD07829" Association="Self.FK__Purchases__Suppl__3FD07829">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="PurchasesBill" EntitySet="PurchasesBills" />
+    </AssociationSet>
+    <AssociationSet Name="FK__purchesBi__Purch__5B78929E" Association="Self.FK__purchesBi__Purch__5B78929E">
+      <End Role="PurchasesBill" EntitySet="PurchasesBills" />
+      <End Role="purchesBillDetails" EntitySet="purchesBillDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SaleBillD__SaleB__5F492382" Association="Self.FK__SaleBillD__SaleB__5F492382">
+      <End Role="SalesBill" EntitySet="SalesBills" />
+      <End Role="SaleBillDetails" EntitySet="SaleBillDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
